@@ -1,0 +1,100 @@
+\Software\Microsoft\Windows NT\CurrentVersion\Winlogon:ScreenSaverGracePeriod
+\System\CurrentControlSet\Control\Lsa:SubmitControl
+\System\CurrentControlSet\Services\Tcpip\Parameters:KeepAliveTime
+\SYSTEM\CurrentControlSet\Control\CrashControl:AutoReboot
+\Software\Microsoft\Windows NT\CurrentVersion\Setup\RecoveryConsole:securitylevel
+\Software\Microsoft\Windows NT\CurrentVersion\Winlogon:scremoveoption
+\Software\Microsoft\Windows NT\CurrentVersion\Winlogon:AllocateFloppies
+\Software\Microsoft\Windows NT\CurrentVersion\Winlogon:AllocateCDRoms
+\System\CurrentControlSet\Control\Session Manager\Kernel:ObCaseInsensitive
+\System\CurrentControlSet\Control\Lsa:fullprivilegeauditing
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:DisableCAD
+\System\CurrentControlSet\Control\Lsa:AuditBaseObjects
+\System\CurrentControlSet\Control\Lsa:crashonauditfail
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:undockwithoutlogon
+\System\CurrentControlSet\Control\Lsa:ForceGuest
+\System\CurrentControlSet\Services\Netbt\Parameters:NoNameReleaseOnDemand
+\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System:EnableUIADesktopToggle
+\System\CurrentControlSet\Services\Lanmanserver\Parameters:Hidden
+\Software\Microsoft\Windows NT\CurrentVersion\Setup\RecoveryConsole:setcommand
+\System\CurrentControlSet\Services\Tcpip\Parameters:EnableICMPRedirect
+\System\CurrentControlSet\Services\Netlogon\Parameters:AuditNTLMInDomain
+\System\CurrentControlSet\Services\Netlogon\Parameters:RestrictNTLMInDomain
+\System\CurrentControlSet\Control\Lsa:UseMachineId
+\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters:SupportedEncryptionTypes
+\System\CurrentControlSet\Services\LanManServer\Parameters:SMBServerNameHardeningLevel
+\System\CurrentControlSet\Control\Lsa\MSV1_0:RestrictSendingNTLMTraffic
+\System\CurrentControlSet\Control\Lsa\MSV1_0:RestrictReceivingNTLMTraffic
+\System\CurrentControlSet\Control\Lsa\MSV1_0:AuditReceivingNTLMTraffic
+\System\CurrentControlSet\Control\Lsa\MSV1_0:allownullsessionfallback
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:EnableVirtualization
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:PromptOnSecureDesktop
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:EnableLUA
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:EnableSecureUIAPaths
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:ValidateAdminCodeSignatures
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:EnableInstallerDetection
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:ConsentPromptBehaviorUser
+\System\CurrentControlSet\Services\LanManServer\Parameters:requiresecuritysignature
+\System\CurrentControlSet\Services\LanmanWorkstation\Parameters:RequireSecuritySignature
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:FilterAdministratorToken
+\SYSTEM\CurrentControlSet\Control\Lsa:TurnOffAnonymousBlock
+\SYSTEM\CurrentControlSet\Services\Eventlog\Security:WarningLevel
+\System\CurrentControlSet\Services\Netlogon\Parameters\maximumpasswordage
+\Software\policies\Microsoft\windows NT\DCOM:MachineLaunchRestriction
+\Software\policies\Microsoft\windows NT\DCOM:MachineAccessRestriction
+\System\CurrentControlSet\Control\Lsa:scenoapplylegacyauditpolicy
+\System\CurrentControlSet\Services\LanManServer\Parameters:NullSessionShares
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:scforceoption
+\System\CurrentControlSet\Services\Netlogon\Parameters:RefusePasswordChange
+\System\CurrentControlSet\Services\NTDS\Parameters:ldapserverintegrity
+\System\CurrentControlSet\Control\Session Manager\SubSystems:optional
+\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers:AuthenticodeEnabled
+\Software\Policies\Microsoft\Cryptography:ForceKeyProtection
+\System\CurrentControlSet\Services\LanManServer\Parameters:restrictnullsessaccess
+\SYSTEM\CurrentControlSet\Control\Session Manager:SafeDllSearchMode
+\System\CurrentControlSet\Services\Tcpip\Parameters:PerformRouterDiscovery
+\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedPaths:Machine
+\System\CurrentControlSet\Services\IPSEC:NoDefaultExempt
+\System\CurrentControlSet\Control\Lsa\FIPSAlgorithmPolicy:Enabled
+\System\CurrentControlSet\Services\LanManServer\Parameters:NullSessionPipes
+\System\CurrentControlSet\Services\Tcpip6\Parameters:DisableIPSourceRouting
+\System\CurrentControlSet\Services\Tcpip\Parameters:DisableIPSourceRouting
+\System\CurrentControlSet\Services\Tcpip6\Parameters:TcpMaxDataRetransmissions
+\System\CurrentControlSet\Services\LanManServer\Parameters:autodisconnect
+\Software\Microsoft\Windows NT\CurrentVersion\Winlogon:passwordexpirywarning
+\Software\Microsoft\Windows NT\CurrentVersion\Winlogon:ForceUnlockLogon
+\Software\Microsoft\Windows NT\CurrentVersion\Winlogon:cachedlogonscount
+\Software\Microsoft\Windows NT\CurrentVersion\Winlogon:AllocateDASD
+\System\CurrentControlSet\Control\Print\Providers\LanMan Print Services\Servers:AddPrinterDrivers
+\System\CurrentControlSet\Control\Lsa:EveryoneIncludesAnonymous
+\System\CurrentControlSet\Services\LanManServer\Parameters:enableforcedlogoff
+\System\CurrentControlSet\Control\Lsa:LimitBlankPasswordUse
+\System\CurrentControlSet\Control\Lsa:NoLMHash
+\System\CurrentControlSet\Services\LanmanWorkstation\Parameters:EnablePlainTextPassword
+\System\CurrentControlSet\Control\Lsa:RestrictAnonymous
+\System\CurrentControlSet\Control\Lsa:RestrictAnonymousSAM
+\System\CurrentControlSet\Services\LanManServer\Parameters:enablesecuritysignature
+\System\CurrentControlSet\Services\LanmanWorkstation\Parameters:EnableSecuritySignature
+\System\CurrentControlSet\Control\Session Manager:ProtectionMode
+\System\CurrentControlSet\Services\Netlogon\Parameters:requirestrongkey
+\System\CurrentControlSet\Services\Netlogon\Parameters:requiresignorseal
+\System\CurrentControlSet\Services\Netlogon\Parameters:sealsecurechannel
+\System\CurrentControlSet\Services\Netlogon\Parameters:signsecurechannel
+\System\CurrentControlSet\Services\Netlogon\Parameters:disablepasswordchange
+\System\CurrentControlSet\Control\Lsa\MSV1_0:NTLMMinServerSec
+\System\CurrentControlSet\Control\Lsa\MSV1_0:NTLMMinClientSec
+\System\CurrentControlSet\Services\LDAP:LDAPClientIntegrity
+\System\CurrentControlSet\Control\Session Manager\Memory Management:ClearPageFileAtShutdown
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:ShutdownWithoutLogon
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:DontDisplayLastUserName
+\Software\Microsoft\Windows NT\CurrentVersion\Winlogon:AutoAdminLogon
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:LegalNoticeText
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:LegalNoticeCaption
+\System\CurrentControlSet\Control\Lsa:LmCompatibilityLevel
+\System\CurrentControlSet\Control\Lsa\pku2u:AllowOnlineID
+\System\CurrentControlSet\Services\LanmanServer\Parameters:AutoShareServer
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:DontDisplayLockedUserId
+\System\CurrentControlSet\Control\Lsa\MSV1_0:ClientAllowedNTLMServers
+\System\CurrentControlSet\Control\Lsa:DisableDomainCreds
+\System\CurrentControlSet\Services\Netlogon\Parameters:DCAllowedNTLMServers
+\Software\Microsoft\Windows\CurrentVersion\Policies\System:ConsentPromptBehaviorAdmin
