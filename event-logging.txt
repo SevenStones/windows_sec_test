@@ -1,0 +1,6 @@
+\SYSTEM\ControlSet001\Services\EventLog\Security:MaxSize
+\SYSTEM\ControlSet001\Services\EventLog\Security:Retention
+\SYSTEM\ControlSet001\Services\EventLog\Application:MaxSize
+\SYSTEM\ControlSet001\Services\EventLog\Application:Retention
+\SYSTEM\ControlSet001\Services\EventLog\System:MaxSize
+\SYSTEM\ControlSet001\Services\EventLog\System:Retention

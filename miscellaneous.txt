@@ -1,0 +1,3 @@
+\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services:MinEncryptionLevel
+\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer:NoDriveTypeAutoRun
+\Software\Policies\Microsoft\Windows\Installer:AlwaysInstallElevated
