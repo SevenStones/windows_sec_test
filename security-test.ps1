@@ -9,22 +9,34 @@
 "<h3>Computer Name</h3>" 
 "<p>$env:computername</p>"
 
+"<h3>Powershell Environment</h3>"
+$PSVersionTable
 
 "<h3>Windows OS Version</h3>"
-$os_ver = (Get-CimInstance Win32_OperatingSystem).version
-"<p>$os_ver</p>"
+(Get-WmiObject -class Win32_OperatingSystem).Caption
+#in case tnar doesn't work ... 
+
+if ($PSVersionTable.PSVersion.Major -gt 2){
+    (Get-CimInstance Win32_OperatingSystem).version
+}
+else {
+    [Environment]::OSVersion
+}
 
 "<h3>IP addresses</h3>"
-$netipaddress = Get-NetIPAddress
-"<p>$netipaddress</p>"
- 
-"<h3>Powershell Version</h3>"
-$psver = $PSVersionTable
-"<p>$psver</p>"
+if ($PSVersionTable.PSVersion.Major -gt 2){
+    Get-NetIPAddress 
+
+    $CurrentIPs = @(); 
+    get-wmiobject win32_networkadapterconfiguration | ? { $_.IPAddress -ne $null } | Sort-Object IPAddress -Unique | % { 
+    $CurrentIPs+=$_.IPAddress }
+    $CurrentIPs 
+} else {
+    Get-NetIPAddress
+}
 
 "<h3>Shares</h3>"
-$shares = Get-WmiObject Win32_Share
-"<p>$shares</p>" 
+Get-WmiObject Win32_Share
 
 function Get-Information 
 {
@@ -156,10 +168,9 @@ function security_options_check
     $unset_keys = @()
 
     foreach ($line in $b){
-        $value,$key = $line.split(':').trim()
-        "Registry key: $value"
-        "key: $key"
-
+        $value,$key = $line.split(':')
+        "Registry key: $value <br>"
+        "key: $key <br>"
 
         if (Test-Path "hklm:$value"){
             $keyvalue = (Get-ItemProperty "hklm:$value" | Select-Object $key).$key
@@ -174,7 +185,7 @@ function security_options_check
             $key_not_found += $value
             ""
         }
-        ""
+        "<p></p>"
     }
 
     "<h4>Keys not found</h4>"
@@ -214,14 +225,13 @@ function event_logging_config_check
     $unset_keys = @()
 
     foreach ($line in $b){
-        $value,$key = $line.split(':').trim()
-        "Registry key: $value"
-        "key: $key"
-
+        $value,$key = $line.split(':')
+        "Registry key: $value<br>"
+        "key: $key<br>"
 
         if (Test-Path "hklm:$value"){
             $keyvalue = (Get-ItemProperty "hklm:$value" | Select-Object $key).$key
-            "Detected key value: $keyvalue<br>"
+            "Detected key value: $keyvalue <br>"
             if ($keyvalue -eq $null){
                 $unset_keys += "${value}: $key"
                 }
@@ -232,7 +242,7 @@ function event_logging_config_check
             $key_not_found += $value
             ""
         }
-        ""
+        "<p></p>"
     }
 
     "<h4>Keys not found</h4>"
@@ -272,10 +282,9 @@ function miscellaneous_options_check
     $unset_keys = @()
 
     foreach ($line in $b){
-        $value,$key = $line.split(':').trim()
-        "Registry key: $value"
-        "key: $key"
-
+        $value,$key = $line.split(':')
+        "Registry key: $value<br>"
+        "key: $key<br>"
 
         if (Test-Path "hklm:$value"){
             $keyvalue = (Get-ItemProperty "hklm:$value" | Select-Object $key).$key
@@ -290,7 +299,7 @@ function miscellaneous_options_check
             $key_not_found += $value
             ""
         }
-        ""
+        "<p></p>"
     }
 
     "<h4>Keys not found</h4>"
