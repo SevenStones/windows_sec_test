@@ -375,3 +375,30 @@ else
 {
     "<p>Skipping miscellaneous settings check; miscellaneous.txt not found</p>"
 }
+
+"<h2>Patches Installed</h2>"
+
+Get-wmiobject -class win32_quickfixengineering | Format-Table 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
